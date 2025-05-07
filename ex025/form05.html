@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário testes</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    
+    <!--Radio como abaixo precisa ter o mesmo nome, diferente de check box (segundo form do código)-->
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sxmas" id="isxmas" value="M"><label for="isxmas">Masculino</label> <br>
+            <input type="radio" name="sxmas" id="isxfem" checked value="F"><label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+        
+            <legend>Esporte Favorito</legend>
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esus" id="iesus"><label for="iesus">Uso de Drogas</label> <br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        
+    </form>
+</body>
+</html>
