@@ -8,7 +8,7 @@
 <body>
     <h1>Exemplo</h1>
 
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post">
         <p>Formulário sem input</p>
 
         <p>
@@ -56,6 +56,21 @@
                     <option value="SC">Santa Catarina</option>
                 </optgroup>
             </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="DEV">Programador</option>
+                <option value="profe">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
         </p>
 
 
