@@ -37,7 +37,8 @@ h1 {
     color: white;
     margin-top: 20px;
     text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.459);
-    font-size: 2em;
+    font-size: 1.5em;
+   
 }
 
 img {
@@ -45,18 +46,8 @@ img {
     margin: auto;
 }
 
-img#phone {
-    display: block;
-}
-img#tablet {
-    display: none;
-}
-img#print {
-    display: none;
-}
-img#televisao {
-    display: none;
-}
-img#desktop {
-    display: none;
-}
+img#phone { display: block; }
+img#tablet { display: none; }
+img#print { display: none; }
+img#televisao { display: none; }
+img#desktop { display: none; }
