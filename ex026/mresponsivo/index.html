@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo</title>
     <link rel="stylesheet" href="style/style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-size: 36px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li>
                     <a href="@">Opção 1</a>
@@ -40,6 +49,16 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, voluptatem impedit nulla natus necessitatibus asperiores, adipisci odio exercitationem officiis nihil unde sunt fugit rerum blanditiis expedita. Natus beatae enim aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem debitis quasi earum neque at illum quod, officiis veritatis saepe doloremque similique minus expedita vitae sequi eligendi error facere, laboriosam odit.</p>
         </article>
     </main>
+
+    <script>
+        function clickMenu () {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
     
 </body>
 </html>
